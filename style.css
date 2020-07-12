@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 1rem;
+}
+
+.ujack {
+  min-height: 50vmin;
+  min-width: 96.7vmin;
+  max-height: 50vmin;
+  max-width: 96.7vmin;
+  height: 50vmin;
+  width: 96.7vmin;
+  background-color: #fff;
+  box-shadow: 0 0 25px 5px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+.ujack > .x {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+.ujack > .x div:nth-child(1) {
+  background: linear-gradient(27deg, #012169 30.2%, #fff 30.2%, #fff 34.9%, #c8102e 34.9%, #c8102e 44.8%, #fff 44.8%, #fff 59.7%, #012169 59.7%);
+  margin: 0 7.7vmin 7.8vmin 0;
+}
+.ujack > .x div:nth-child(2) {
+  background: linear-gradient(-27deg, #012169 30.2%, #fff 30.2%, #fff 45.1%, #c8102e 45.1%, #c8102e 55%, #fff 55%, #fff 59.7%, #012169 59.7%);
+  margin: 0 0 7.8vmin 7.7vmin;
+}
+.ujack > .x div:nth-child(3) {
+  background: linear-gradient(-27deg, #012169 40.3%, #fff 40.3%, #fff 45%, #c8102e 45%, #c8102e 54.9%, #fff 54.9%, #fff 69.8%, #012169 69.8%);
+  margin: 7.8vmin 7.7vmin 0 0;
+}
+.ujack > .x div:nth-child(4) {
+  background: linear-gradient(27deg, #012169 40.3%, #fff 40.3%, #fff 55.2%, #c8102e 55.2%, #c8102e 65.1%, #fff 65.1%, #fff 69.8%, #012169 69.8%);
+  margin: 7.8vmin 0 0 7.7vmin;
+}
+.ujack > .plus {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+.ujack > .plus div {
+  position: absolute;
+}
+.ujack > .plus div:nth-child(1), .ujack > .plus div:nth-child(2) {
+  background: #c8102e;
+}
+.ujack > .plus div:nth-child(1) {
+  top: 0;
+  height: 100%;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+          transform: translatex(-50%);
+  width: 9.8vmin;
+}
+.ujack > .plus div:nth-child(2) {
+  top: 50%;
+  width: 100%;
+  left: 0;
+  -webkit-transform: translatey(-50%);
+          transform: translatey(-50%);
+  height: 10vmin;
+}
